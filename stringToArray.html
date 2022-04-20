@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>String to Array:</h1>
+<p>Click the button to input a string.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let str = prompt("Enter a string to reverse it:");
+document.getElementById("output").innerHTML = stringToArray(str);
+
+  }
+
+  function stringToArray(str){
+    const arr = str.split(" ");
+    return arr;
+  }
+
+</script>
+
+</body>
+</html>
+
+

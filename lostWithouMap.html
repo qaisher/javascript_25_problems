@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Double Array/ Lost Without a Map:</h1>
+<p>Click the button to input numbers.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let stringNum = prompt("Enter an array separated by spaces:");
+document.getElementById("output").innerHTML = doubleArray(stringNum);
+
+  }
+
+  function doubleArray(a){
+    const arrayNum = (a.split(' '));
+    let double = [];
+    for(const item of arrayNum){
+        double.push(item*2);
+    }
+    
+    return double;
+    
+  }
+
+</script>
+
+</body>
+</html>
+
+

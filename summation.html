@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Summation:</h1>
+<p>Click the button to input.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let n = prompt("Enter a number n to get the summation from 1 to n:");
+document.getElementById("output").innerHTML = summation(n);
+
+  }
+
+  function summation(a){
+    let sum = 0;
+    for(let i = 1; i <= a; i++){
+        sum = sum + i;
+    }
+    return sum;
+    
+  }
+
+</script>
+
+</body>
+</html>
+
+

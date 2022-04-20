@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Johnny Love:</h1>
+<p>Click the button to input your name.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+    
+function input() {
+let name = prompt("Enter your name:");
+document.getElementById("output").innerHTML = checkName(name);
+}
+function checkName(name){
+    if(name === 'Johnny')
+    return 'Hello, my love!';
+    else
+    return 'Hello, ' + name +'!';
+}
+</script>
+
+</body>
+</html>
+
+

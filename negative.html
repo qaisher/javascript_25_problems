@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Make Negative:</h1>
+<p>Click the button to input a number.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let num = prompt("Enter a positive number to make it negative:");
+document.getElementById("output").innerHTML = makeNegative(num);
+
+  }
+
+  function makeNegative(a){
+    if (a < 0)
+    return `It's already a negative number.`;
+    else if(a == 0)
+    return 'The number is zero!';
+    else{
+        return a*(-1);
+    }
+    
+  }
+
+</script>
+
+</body>
+</html>
+
+

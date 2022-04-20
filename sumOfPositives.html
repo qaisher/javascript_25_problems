@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Summation of Positives:</h1>
+<p>Click the button to input.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let n = prompt("Enter numbers (negative and positive) separated by spaces to get the summation positives:");
+document.getElementById("output").innerHTML = sumOfPositives(n);
+
+  }
+
+  function sumOfPositives(a){
+    const arrayNum = a.split(' ');
+    let sum = 0;
+    for(let i = 0; i < arrayNum.length; i++){
+        if(arrayNum[i] >0){
+        let x =  Number(arrayNum[i]);
+        sum = sum+x;
+        }
+    }
+    return sum;
+    
+  }
+
+</script>
+
+</body>
+</html>
+
+

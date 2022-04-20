@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Average of Array:</h1>
+<p>Click the button to input numbers.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+
+function input() {
+let stringNum = prompt("Enter an array separated by spaces:");
+document.getElementById("output").innerHTML = averageOfArray(stringNum);
+
+  }
+
+  function averageOfArray(a){
+    const arrayNum = (a.split(' '));
+    let sum = 0;
+    let len = arrayNum.length;
+    for(let i = 0; i < len; i++){
+        let x = Number(arrayNum[i]);
+        sum = (sum + x);
+    }
+    return (sum/len);
+    
+  }
+
+</script>
+
+</body>
+</html>
+
+

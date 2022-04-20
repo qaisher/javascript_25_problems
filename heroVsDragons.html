@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Hero vs Dragons:</h1>
+<p>Click the button to input number of bullets.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+function input() {
+let bullets = prompt("Enter the number of bullets:");
+document.getElementById("output").innerHTML = result(bullets);
+  }
+
+  function result(bullets)
+  {
+      let dragons = Math.floor(Math.random() * 10) + 1;
+      if(bullets >= dragons*2)
+      return `There were ${dragons} dragons and you carried ${bullets} bullets. You Won!`;
+      else
+      return `There were ${dragons} dragons and you carried ${bullets} bullets. You Lost!`;
+  }
+
+</script>
+
+</body>
+</html>
+
+

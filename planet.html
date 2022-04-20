@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Planet Name:</h1>
+<p>Click to input planet number and get the name.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+    
+function input() {
+let num = prompt("Enter a number between 1 and 8:");
+let x = ifElseFunc(num);
+document.getElementById("output").innerHTML = x;
+}
+
+function ifElseFunc(num){
+    if(num == 1)
+    return 'Mercury';
+    else if(num == 2)
+    return 'Venus';
+    else if(num == 3)
+    return 'Earth';
+    else if(num ==4)
+    return 'Mars';
+    else if(num ==5)
+    return 'Jupiter';
+    else if(num ==6)
+    return 'Satrun';
+    else if(num ==7)
+    return 'Uranus';
+    else if(num ==8)
+    return 'Neptune';
+    else
+    return 'Invalid number.'
+}
+/* I could not figure out why my swtich-case is returning default value every time.
+
+
+  function getPlanetName(num){
+      let name;
+      switch(num){
+            case 1:
+              name = 'Mercury'
+              break;
+            case 2:
+                name = 'Venus'
+                break;
+            case 3:
+                name = 'Earth'
+                break;
+            case 4:
+                name = 'Mars'
+                break;
+            case 5:
+                name = 'Jupiter'
+                break;
+            case 6:
+                name = 'Saturn'
+                break;
+            case 7:
+                name = 'Uranus'
+                break;
+            case 8:
+                name = 'Neptune'
+                break;
+            default:
+                return "Invalid number.";
+      }
+      return name;
+  }*/
+
+</script>
+
+</body>
+</html>

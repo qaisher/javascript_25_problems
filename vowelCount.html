@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Vowel Count:</h1>
+<p>Click the button to input a string.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let str = prompt("Enter a string to count the vowels in it:");
+document.getElementById("output").innerHTML = vowelCount(str);
+
+  }
+
+  function vowelCount(str){
+    const arr = str.split("");
+    console.log(arr);
+    let vowels = 0;
+    for(let i = 0; i<str.length; i++)
+    {
+        if(arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' ||
+        arr[i] == 'u')
+        vowels++;
+    }
+    return `The number of vowels is/are ${vowels}`;
+  }
+
+</script>
+
+</body>
+</html>
+
+

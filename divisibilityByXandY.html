@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Check divisibility by x and y:</h1>
+<p>Click the button to input.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+function input() {
+let num = prompt("Enter a number to check its divisibility:");
+let d1 = prompt("Enter a number to check the divisibility by:");
+let d2 = prompt("Enter a number to check the divisibility by:");
+document.getElementById("output").innerHTML = checkDivisibility(num, d1, d2);
+
+  }
+
+  function checkDivisibility(num, d1, d2){
+    if (num%d1 == 0 && num%d2 == 0)
+    return `${num} is divisible by both ${d1} and ${d2}.`;
+    else if(num%d1 == 0)
+    return `${num} is divisible by ${d1}.`;
+    else if(num%d2 == 0)
+    return `${num} is divisible by ${d2}.`;
+  }
+
+</script>
+
+</body>
+</html>
+
+

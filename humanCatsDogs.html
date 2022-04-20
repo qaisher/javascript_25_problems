@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Human Years, Cat Years, Dog Years:</h1>
+<p>Click the button to input human years.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+
+function input() {
+let humanYears = prompt("Enter Human Years:");
+document.getElementById("output").innerHTML = humanCatDogYears(humanYears);
+  }
+
+  function humanCatDogYears(humanYears){
+    if (humanYears === 1)
+    return [humanYears, 15, 15];
+    else if(humanYears === 2)
+    return [humanYears, 24, 24];
+    else
+    return [humanYears, 24+(humanYears-2)*4, 24+(humanYears-2)*5];
+  }
+
+</script>
+
+</body>
+</html>
+
+

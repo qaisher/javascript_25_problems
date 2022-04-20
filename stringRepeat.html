@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>String Repeat:</h1>
+<p>Click the button to input numbers.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let str = prompt("Enter the strig:");
+let n = prompt("Enter number of times:");
+document.getElementById("output").innerHTML = stringRepeat(n, str);
+  }
+
+function stringRepeat(n, str){
+    let repStr = '';
+    for(let i = 0; i < n; i++){
+        repStr = repStr + str;
+    }
+    return repStr;
+}
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Johnny Love:</h1>
+<p>Click the button to input your name.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+    
+function input() {
+let player1 = prompt("Player 1: Enter r, p or s:");
+let player2 = prompt("Player 2: Enter r, p or s:");
+document.getElementById("output").innerHTML = checkResult(player1, player2);
+}
+function checkResult(player1, player2){
+    if(player1 === 'r'){
+
+        if(player2 === 'r')
+        return 'Draw';
+        if(player2 === 'p')
+        return 'Player 2 Won!';
+        if(player2 === 's')
+        return 'Player 1 Won!';
+    }
+
+    if(player1 === 'p'){
+
+        if(player2 === 'r')
+        return 'Player 1 Won!';
+        if(player2 === 'p')
+        return 'Draw';
+        if(player2 === 's')
+        return 'Player 2 Won!';
+    }
+
+    if(player1 === 's'){
+
+        if(player2 === 'r')
+        return 'Player 2 Won!';
+        if(player2 === 'p')
+        return 'Player 1 Won!';
+        if(player2 === 's')
+        return 'Draw';
+
+    }
+
+    }
+</script>
+
+</body>
+</html>
+
+

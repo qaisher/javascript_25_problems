@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Math Operations:</h1>
+<p>Click the button to input numbers.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+function input() {
+let operation = prompt("Enter operand:");
+let num1 = prompt("Enter first number:");
+let num2 = prompt("Enter second number:");
+document.getElementById("output").innerHTML = eval(num1+operation+num2);
+  }
+
+
+</script>
+
+</body>
+</html>
+
+

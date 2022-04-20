@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Remove First and Last Character:</h1>
+<p>Click the button to input a string.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+  
+function input() {
+let str = prompt("Enter a string to remove first and last character:");
+document.getElementById("output").innerHTML = removeFirstLastChar(str);
+
+  }
+
+  function removeFirstLastChar(str){
+    return str.substring(1, str.length - 1);
+  }
+
+</script>
+
+</body>
+</html>
+
+

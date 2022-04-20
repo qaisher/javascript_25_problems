@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Smallest Integer:</h1>
+<p>Click the button to input numbers.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+function input() {
+let stringNum = prompt("Enter an array separated by spaces:");
+document.getElementById("output").innerHTML = findSmallest(stringNum);
+
+  }
+
+  function findSmallest(a){
+    const arrayNum = a.split(' ');
+    let smallest = arrayNum[0];
+    for(let i = 0; i < arrayNum.length; i++){
+        if(arrayNum[i] < smallest)
+        smallest = arrayNum[i];
+    }
+    return smallest;
+    
+  }
+
+</script>
+
+</body>
+</html>
+
+

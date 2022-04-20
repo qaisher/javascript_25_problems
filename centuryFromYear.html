@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Century from Year:</h1>
+<p>Click the button to input a year.</p>
+<button onclick="input()">Input</button>
+<p id="output"></p>
+
+<script>
+function input() {
+let year = prompt("Enter a year to know the century:");
+document.getElementById("output").innerHTML = getCentury(year);
+
+  }
+
+  function getCentury(year){
+   const century = Math.ceil(year/100);
+   console.log(century);
+   return `It's ${century} Century.`;
+  }
+
+</script>
+
+</body>
+</html>
+
+
